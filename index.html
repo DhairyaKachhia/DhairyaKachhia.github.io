@@ -2,14 +2,74 @@
 
 <head>
     <title>Welcome to my website</title>
+    <style>
+        /* Dropdown Button */
+        
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+        /* The container <div> - needed to position the dropdown content */
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        /* Dropdown Content (Hidden by Default) */
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        /* Links inside the dropdown */
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        /* Change color of dropdown links on hover */
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        /* Show the dropdown menu on hover */
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="dropdown" style="float:right;">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+            <a href="#">Day 1</a>
+            <a href="#">Day 2</a>
+        </div>
+    </div>
+
+    <br>
+
     <h2>Hello World!!</h2>
     <p>Welcome to my first website. I want to share my experiance of making a website with you. Here I will post regular updates of my web-developing from scratch(HTML/CSS/JS). On this very first page I have used basic HTML. I hope you enjoy it and stay
         tuned for more updates.</p>
     <strong>So here we go!!</strong>
-
+    <!-- Greetings ended -->
     <h2>Content:</h2>
     <ul>
         <li><a href="#national-park">Top 3 national parks in Canada</a></li>
@@ -19,7 +79,8 @@
         </li>
 
     </ul>
-
+    <!-- Content ended-->
+    <!-- Table starts from below-->
     <h1 id="national-park">Top 3 national parks to visit in Canada</h1>
     <table>
         <thead>
@@ -47,18 +108,21 @@
             </tr>
         </tbody>
     </table>
-
+    <!-- Table ended; pictures below-->
     <h1 id="pics">Pictures</h1>
-    <img src="https://raw.githubusercontent.com/DhairyaKachhia/DhairyaKachhia.github.io/main/Jasper_national_park.jpeg" alt="Jasper National park landscaper" width="400">
-    <img src="https://raw.githubusercontent.com/DhairyaKachhia/DhairyaKachhia.github.io/main/gros_morne_National_Park.jpg" alt="Gors Morne National park landscaper" width="400">
-    <img src="https://raw.githubusercontent.com/DhairyaKachhia/DhairyaKachhia.github.io/main/auyuittuq_national_park.jpg" alt="Auyuittuq National park landscaper" width="400">
+    <img src="images/Jasper_national_park.jpeg" alt="Jasper National park landscaper" width="400">
+    <img src="images/gros_morne_National_Park.jpg" alt="Gors Morne National park landscaper" width="400">
+    <img src="images/auyuittuq_national_park.jpg" alt="Auyuittuq National park landscaper" width="400">
     <p>To see full information about all national-park,
         <a href="https://travel.usnews.com/rankings/best-national-parks-in-canada/#:~:text=Jasper%20National%20Park,-%231%20in%20Best&text=The%20largest%20national%20park%20in,for%20stargazing%20when%20you%20visit.">Click here</a>.
     </p>
-
+    <!-- Upcoming announcements-->
     <p>
         <h3>Upcoming:</h3> Same webpage but now I will add CSS to it. <a href="https://www.instagram.com/dhairya.kachhia_/">Visit my instagram</a> to stay tuned with any updates.</p>
     <p><strong>Thank you for visiting</strong></p>
+
+    <!-- Topics learnt -->
+
     <p>----------------------------------------------------------------------------------------------------</p>
     <h5>
         <p id="topics_learnt">Things that I Learnt to make this web page are:</p>
